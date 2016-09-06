@@ -1,20 +1,24 @@
-import java.util.*;
-public class Index {
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class index 
+{
+  public static void main(String[] args) 
+  {
+		// TODO Auto-generated method stub
+		Scanner sc =new Scanner(System.in);
 		int n=sc.nextInt();
-		int i;
-		int[]m=new int[n];
-		for(i=0;i<n;i++)
+		int ar[]=new int[n];
+		for(int i=0;i<n;i++)
+			ar[i]=sc.nextInt();
+		Arrays.sort(ar);
+		for(int i=0;i<n;i++)
 		{
-			m[i]=sc.nextInt();
+			if(i==ar[i])
+				System.out.println(ar[i]);
 		}
-		for(i=0;i<n;i++)
-		{
-		if(m[i]==i)
-		{
-			System.out.print(m[i]+" ");
-		}
-		}
-		}
+		sc.close();
+	}
+
+}
 		
