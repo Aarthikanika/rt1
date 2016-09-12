@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Compressing_Term {
+public class Occurence{
 
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
@@ -22,11 +22,11 @@ public class Compressing_Term {
 		if(ch[i]!=' '){
 		if(count>1){
 			str+=ch[i]+""+count;
-			//System.out.print(ch[i]+""+count);
+			
 		}
 		else
 			str+=ch[i]+"";
-			//System.out.print(ch[i]+"");
+		
 		}
 		}
 		System.out.println(str);
